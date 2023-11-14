@@ -1,0 +1,726 @@
+:root {
+  --primary-text-color: #8c8c8c;
+  --secondary-text-color: #1d1d1d;
+  --rose-hover-color: rgba(255, 134, 142, 0.3);
+  --green-hover-color: rgba(151, 234, 185, 0.3);
+  --orange-hover-color: rgba(255, 210, 128, 0.3);
+  --body-bg-color: #e5e5e5;
+  --btn-bg-color: #ffffff;
+  --default-rose-color: #ff868e;
+  --default-green-color: #97eab9;
+  --default-orange-color: #ffd280;
+  --form-bg-color: #f8f8f7;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--body-bg-color);
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  position: relative;
+  width: 1440px;
+  min-height: 900px;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 147px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #f8f8f7;
+  /* background-image: url(../svg/girl-and-pet-1.svg);
+  background-repeat: no-repeat;
+  background-position: right top, right 30px top 30px; */
+
+}
+
+.background-img{
+  position: absolute;
+  width: 775px;
+  height: 900px;
+  top: 0;
+  right: 0;
+  padding: 0;
+  background-image: url(../svg/girl-and-pet-1.svg);
+  background-repeat: no-repeat;
+}
+
+.container.hide {
+  background-image: none;
+}
+
+.search-section {
+  background-color: antiquewhite;
+  border-radius: 20px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.page-container {
+  width: 680px;
+  border-radius: 20px;
+ 
+  background-color: #fbe0dc;
+}
+
+.sidebar-container {
+  position: relative;
+  min-width: 446px;
+  min-height: 600px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  margin-right: 137px; 
+
+  /* background-color: #97eab9; */
+}
+
+.sidebar {
+  position: sticky;
+  left: 0;
+  top: 30px;
+
+  /* width: 446px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  margin-right: 137px;*/
+
+  background-color: #97eab9; 
+}
+
+.page {
+  background-color: var(--btn-bg-color);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* ------общие кнопки ----------- */
+
+.btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+
+  background-color: var(--rose-hover-color);
+  color: var(--default-rose-color);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--default-rose-color);
+  color: var(--btn-bg-color);
+}
+
+.icon-min {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* ------------------------------- */
+
+.logo {
+  display: block;
+  margin-bottom: 80px;
+
+  background-color: tomato;
+}
+
+.logo img {
+  display: block;
+}
+
+.greetings {
+  margin-bottom: 10px;
+
+  font-size: 44px;
+  line-height: 1.32;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+
+  background-color: #ff868e;
+}
+
+.welkome {
+  margin-bottom: 60px;
+
+  background-color: #ffd280;
+}
+
+.text {
+  margin-bottom: 20px;
+
+  color: var(--secondary-text-color);
+  font-weight: 500;
+
+  background-color: aqua;
+}
+
+/* ------- Навигация ------ */
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item + .nav-item {
+  margin-left: 16px;
+}
+
+.nav-img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  color: var(--default-rose-color);
+  background-color: var(--btn-bg-color);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 2px;
+  text-decoration: none;
+
+  display: block; /*inline-block*/
+  width: 138px; /*min-width*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+
+  /* border: 1px transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 138px;
+  height: 36px; */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: rgba(255, 134, 142, 0.3);
+}
+
+.nav-link:active {
+  background-color: #ff868e;
+}
+
+.label {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.input {
+  color: var(--primary-text-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: inherit;
+  line-height: 1.5;
+}
+
+.input.option {
+  color: var(--secondary-text-color);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.input.option option {
+  color: var(--primary-text-color);
+}
+
+/* ------форма поиска и лайки ------- */
+
+.search-form {
+  display: flex;
+  margin-right: 10px;
+
+  width: 470px;
+  height: 60px;
+
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  border-radius: 20px;
+}
+
+.search-input:hover,
+.search-input:focus {
+  border: 1px #fbe0dc solid;
+}
+
+.search-input:active {
+  border: 1px var(--default-rose-color) solid;
+}
+
+/* .search-btn {
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  border-radius: 10px;
+
+  background-color: var(--rose-hover-color);
+  color: var(--default-rose-color);
+}
+
+.search-btn:hover {
+  background-color: var(--default-rose-color);
+  color: var(--btn-bg-color);
+}
+
+.icon-min {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+} */
+
+/* <!-- ссылки на страницы лайков --> */
+
+.links-list {
+  display: flex;
+}
+
+.links-item {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: var(--btn-bg-color);
+}
+
+.links-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.links-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: inherit;
+  color: var(--default-rose-color);
+}
+
+.links-link:hover,
+.links-link:focus {
+  background-color: var(--rose-hover-color);
+}
+
+.links-link:active {
+  background-color: var(--default-rose-color);
+  color: var(--btn-bg-color);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
+/* -----кнопка назад и название страницы---- */
+
+.page-nav,
+.breeds-nav {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  /* width: 40px;
+  height: 40px;
+  border: transparent;
+  border-radius: 10px;
+  background-color: var(--rose-hover-color); */
+  margin-right: 10px;
+  /* color: var(--default-rose-color); */
+}
+/* 
+.back-btn:hover {
+  background-color: var(--default-rose-color);
+  color: var(--btn-bg-color);
+} */
+
+/* .links-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: inherit;
+  color: var(--default-rose-color);
+}
+
+.links-link:hover {
+  background-color: var(--rose-hover-color);
+}
+
+.links-link:active {
+  background-color: var(--default-rose-color);
+  color: var(--btn-bg-color);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+} */
+
+.page-title {
+  background-color: var(--default-rose-color);
+  color: var(--btn-bg-color);
+
+  text-align: center;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  padding: 5px 30px;
+
+  border-radius: 10px;
+  /* margin-right: 10px; */
+}
+
+/* ------------------------------------- */
+
+.link {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: var(--btn-bg-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .button {
+  color: var(--btn-bg-color);
+  background-color: var(--default-rose-color);
+
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 2px;
+} */
+
+.upload-btn {
+  display: flex;
+  padding: 12px 30px 12px 30px;
+  margin-left: auto;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 10px;
+
+  color: var(--default-rose-color);
+  background-color: var(--rose-hover-color);
+}
+
+.upload-btn:hover,
+.upload-btn:focus {
+  background-color: var(--default-rose-color);
+  color: var(--btn-bg-color);
+}
+
+.upload-icon {
+  margin-right: 10px;
+}
+
+/* ---------Voting page -----------*/
+
+/* .section {
+  background-color: var(--btn-bg-color);
+  padding-left: 20px;
+} */
+
+.add-list {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 14px;
+  /* width: 248px;
+  height: 80px; */
+  height: 80px;
+  justify-content: center;
+
+  background-color: rgb(176, 180, 184);
+}
+
+/* .add-list-item {
+  width: 80px;
+  height: 80px;
+} */
+
+/* .add-list-item:nth-child(1){
+background-color: var(--default-rose-color);
+background-image: url(../svg/like.svg);
+background-repeat: no-repeat;
+background-position: center; */
+/* background-color: #8c8c8c; */
+/* border: 2px solid teal; */
+/* border: 2px solid var(--btn-bg-color); */
+/* } */
+
+/* !!!! переделать!!!  */
+
+.add-btn {
+  width: 82.666px;
+  height: 80px;
+  border-color: transparent;
+  background-color: var(--default-rose-color);
+  border: 4px solid var(--btn-bg-color);
+  padding: 0;
+  cursor: pointer;
+  color: var(--btn-bg-color);
+}
+
+.like {
+  background-color: var(--default-green-color);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-right: 2px;
+}
+
+.favourite {
+  background-color: var(--default-rose-color);
+}
+
+.dislike {
+  background-color: var(--default-orange-color);
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-left: 2px;
+}
+
+.like:hover,
+.like:focus {
+  background-color: var(--green-hover-color);
+  color: var(--default-green-color);
+}
+
+.favourite:hover,
+.favourite:focus {
+  background-color: var(--rose-hover-color);
+  color: var(--default-rose-color);
+}
+
+.favourite:active {
+  background-color: var(--default-rose-color);
+  /* color: var(--default-rose-color); */
+}
+
+.icon-fav:active {
+  /* здесь должна быть другая иконка !!!!!!!!!*/
+  fill: #ffffff;
+  background-image: url(../svg/fav-full-white.svg);
+}
+
+.dislike:hover,
+.dislike:focus {
+  background-color: var(--orange-hover-color);
+  color: var(--default-orange-color);
+}
+
+.added-list .comment {
+  color: var(--primary-text-color);
+}
+
+.time,
+.id,
+.added-list .comment {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.time,
+.id {
+  color: var(--secondary-text-color);
+}
+
+.time {
+  background-color: var(--btn-bg-color);
+}
+
+.id {
+  font-weight: 500;
+}
+
+.item {
+  padding-left: 15px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 21px;
+  background-color: rgba(248, 248, 247, 1);
+  border-radius: 10px;
+  display: flex;
+}
+
+.item + .item {
+  margin-top: 10px;
+}
+
+.comment-icon {
+  margin-left: auto;
+}
+
+.comment-icon.fav {
+  fill: var(--default-rose-color);
+}
+
+.comment-icon-like {
+  fill: var(--default-green-color);
+}
+
+.comment-icon-dislike {
+  fill: var(--default-orange-color);
+}
+
+/* ------ breeds page------- */
+
+.form-datalist {
+  margin-left: 10px;
+}
+
+.datalist {
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 10px;
+
+  background-color: var(--form-bg-color);
+}
+
+.datalist-input {
+  width: 226px;
+}
+
+.datalist-limit {
+  width: 101px;
+}
+
+.sort-list {
+  display: flex;
+}
+
+.sort-item + .sort-item {
+  margin-left: 10px;
+}
+
+.sort-btn {
+  background-color: var(--form-bg-color);
+  color: var(--primary-text-color);
+  font-weight: 400;
+}
+
+.sort-btn.icon-up {
+  fill: currentColor;
+}
+
+.btn.icon-up:hover,
+.btn.icon-up:focus {
+  background-color: var(--form-bg-color);
+  color: var(--default-rose-color);
+}
+.sort-btn.icon-down:hover,
+.sort-btn.icon-down:focus {
+  background-color: var(--form-bg-color);
+  color: var(--default-rose-color);
+}
+
+/* .btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+
+  background-color: var(--rose-hover-color);
+  color: var(--default-rose-color);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--default-rose-color);
+  color: var(--btn-bg-color);
+}
+
+.icon-min {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+} */
+
+/* ------ gallery page------- */
+
+.choose {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--form-bg-color);
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.choose-form {
+  width: 290px;
+  margin-bottom: 10px;
+}
+
+.choose-form:nth-child(2n + 1) {
+  margin-right: 20px;
+}
+
+.choose-form.small {
+  width: 240px;
+  margin-right: 10px;
+}
+
+.choose-form .input.option {
+  width: 100%;
+}
+
+.update-btn {
+  background-color: var(--btn-bg-color);
+  color: var(--default-rose-color);
+}

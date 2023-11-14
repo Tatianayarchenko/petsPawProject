@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- служебный див для перехода домой -->
+
+    <div>
+      <a href="/" class="logo">
+        <img src="../svg/logo.svg" alt="cat's footprint"
+      /></a>
+    </div>
+
+    <!-- контейнер -->
+
+    <div class="container hide">
+      <!-- Левая часть сайта -->
+
+      <div class="sidebar">
+        <!-- логотип -->
+
+        <header>
+          <a href="../" class="logo">
+            <img src="../svg/logo.svg" alt="cat's footprint" />
+          </a>
+        </header>
+
+        <!-- приветствие -->
+
+        <p class="greetings">Hi intern!</p>
+        <p class="welkome">Welcome to MI 2022 Front-end test</p>
+        <p class="text">Lets start using The Cat API</p>
+
+        <!-- навигация по станицам -->
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <img
+                src="../svg/voting.svg"
+                alt="folder with voice sheets"
+                class="nav-img"
+              />
+              <a href="./voting.html" class="nav-link">VOTING</a>
+            </li>
+            <li class="nav-item">
+              <img
+                src="../svg/toy-cat.svg"
+                alt="cat"
+                width="138"
+                height="198"
+                class="nav-img"
+              />
+              <a href="./breeds.html" class="nav-link">BREEDS</a>
+            </li>
+            <li class="nav-item">
+              <img
+                src="../svg/gallery.svg"
+                alt="phone in hand"
+                width="138"
+                height="198"
+                class="nav-img"
+              />
+              <a href="./gallery.html" class="nav-link">GALLERY</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- правая часть сайта -->
+
+      <!-- Breeds страница -->
+
+      <div class="page-container">
+        <!-- секция с формой и лайками -->
+        <section class="search-section">
+          <!--  форма поиска -->
+
+          <form class="search-form" action="">
+            <input
+              class="input search-input"
+              type="text"
+              placeholder="Search for breeds by name"
+            />
+            <button class="btn search-btn" type="submit">
+              <svg class="icon-min">
+                <use href="../svg/symbol-defs.min.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+
+          <!-- ссылки на страницы лайков -->
+
+          <div>
+            <ul class="links-list">
+              <li class="links-item">
+                <a class="links-link icon-like" href="">
+                  <svg class="icon">
+                    <use href="../svg/symbol-defs.min.svg#icon-like"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="links-item">
+                <a class="links-link icon-favourite" href="">
+                  <svg class="icon">
+                    <use href="../svg/symbol-defs.min.svg#icon-fav"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="links-item">
+                <a class="links-link icon-dislike" href="">
+                  <svg class="icon">
+                    <use href="../svg/symbol-defs.min.svg#icon-dislike"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <main class="page">
+          <div class="page-nav">
+            <!-- кнопка назад -->
+            <button class="btn back-btn">
+              <svg class="icon-min">
+                <use href="../svg/symbol-defs.min.svg#icon-back"></use>
+              </svg>
+            </button>
+            <h2 class="page-title">VOTING</h2>
+          </div>
+          <img
+            src="../images/cat-voting-page.jpg"
+            alt="black cat"
+            width="640"
+          />
+
+          <!--  список кнопок добавления к лайкам или дизлайкам -->
+
+          <ul class="add-list">
+            <li class="add-list-item">
+              <button class="add-btn like">
+                <svg class="icon">
+                  <use href="../svg/symbol-defs.min.svg#icon-like"></use>
+                </svg>
+              </button>
+            </li>
+
+            <li class="add-list-item">
+              <button class="add-btn favourite">
+                <svg class="icon icon-fav">
+                  <use href="../svg/symbol-defs.min.svg#icon-fav"></use>
+                </svg>
+              </button>
+            </li>
+
+            <li class="add-list-item">
+              <button class="add-btn dislike">
+                <svg class="icon">
+                  <use href="../svg/symbol-defs.min.svg#icon-dislike"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+
+          <!-- коментарии -->
+          <ul class="added-list">
+            <li class="item">
+              <p class="comment">
+                <time datetime="2018-07-14T22:35" class="time">22:35</time>
+                Image Id: <span class="id">fQSunHvl8</span> was added to
+                Favourites
+              </p>
+              
+              <svg class="icon comment-icon fav">
+                <use href="../svg/symbol-defs.min.svg#icon-fav"></use>
+              </svg>
+            </li>
+
+            <li class="item">
+              <p>
+                <time datetime="2018-07-14T22:27" class="time">22:27</time>
+                Image Id: <span class="id">HJd0XecNX</span> was added to Likes
+              </p>
+              
+              <svg class="icon comment-icon comment-icon-like">
+                <use href="../svg/symbol-defs.min.svg#icon-like"></use>
+              </svg>
+            </li>
+
+            <li class="item">
+              <p>
+                <time datetime="2018-07-14T22:21" class="time">22:21</time>
+                Image Id: <span class="id">BbMFS3bU-</span> was added to
+                Dislikes
+              </p>
+            
+              <svg class="icon comment-icon comment-icon-dislike">
+                <use href="../svg/symbol-defs.min.svg#icon-dislike"></use>
+              </svg>
+            </li>
+
+            <li class="item">
+              <p>
+                <time datetime="2018-07-14T21:56" class="time">21:56</time>
+                Image Id: <span class="id">fQSunHvl8</span> was removed from
+                Favourites
+              </p>
+            </li>
+          </ul>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

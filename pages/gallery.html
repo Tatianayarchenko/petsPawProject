@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- служебный див для перехода домой -->
+    <div>
+      <a href="/" class="logo">
+        <img src="../svg/logo.svg" alt="cat's footprint"
+      /></a>
+    </div>
+
+    <!--  header -->
+
+    <div class="container hide">
+      <!-- Левая часть сайта -->
+
+      <div class="sidebar">
+        <!-- логотип -->
+
+        <header>
+          <a href="../" class="logo">
+            <img src="../svg/logo.svg" alt="cat's footprint" />
+          </a>
+        </header>
+
+        <!-- приветствие -->
+
+        <p class="greetings">Hi intern!</p>
+        <p class="welkome">Welcome to MI 2022 Front-end test</p>
+        <p class="text">Lets start using The Cat API</p>
+
+        <!-- навигация по станицам -->
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <img
+                src="../svg/voting.svg"
+                alt="folder with voice sheets"
+                class="nav-img"
+              />
+              <a href="./voting.html" class="nav-link">VOTING</a>
+            </li>
+            <li class="nav-item">
+              <img
+                src="../svg/toy-cat.svg"
+                alt="cat"
+                width="138"
+                height="198"
+                class="nav-img"
+              />
+              <a href="./breeds.html" class="nav-link">BREEDS</a>
+            </li>
+            <li class="nav-item">
+              <img
+                src="../svg/gallery.svg"
+                alt="phone in hand"
+                width="138"
+                height="198"
+                class="nav-img"
+              />
+              <a href="./gallery.html" class="nav-link">GALLERY</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- правая часть сайта -->
+
+      <!-- Gallery страница -->
+
+      <div class="page-container">
+        <!-- секция с формой и лайками -->
+
+        <section class="search-section">
+          <!--  форма поиска -->
+
+          <form class="search-form" action="">
+            <input
+              class="input search-input"
+              type="text"
+              placeholder="Search for breeds by name"
+            />
+            <button class="btn search-btn" type="submit">
+              <svg class="icon-min">
+                <use href="../svg/symbol-defs.min.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+
+          <!-- ссылки на страницы лайков -->
+
+          <div>
+            <ul class="links-list">
+              <li class="links-item">
+                <a class="links-link icon-like" href="">
+                  <svg class="icon">
+                    <use href="../svg/symbol-defs.min.svg#icon-like"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="links-item">
+                <a class="links-link icon-favourite" href="">
+                  <svg class="icon">
+                    <use href="../svg/symbol-defs.min.svg#icon-fav"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="links-item">
+                <a class="links-link icon-dislike" href="">
+                  <svg class="icon">
+                    <use href="../svg/symbol-defs.min.svg#icon-dislike"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <main class="page">
+          <div class="page-nav">
+            <button class="btn back-btn">
+              <svg class="icon-min">
+                <use href="../svg/symbol-defs.min.svg#icon-back"></use>
+              </svg>
+            </button>
+            <h2 class="page-title">GALLERY</h2>
+            <button class="upload-btn">
+              <svg class="icon-min upload-icon">
+                <use href="../svg/symbol-defs.min.svg#icon-upload"></use>
+              </svg>
+              UPLOAD
+            </button>
+          </div>
+
+          <section>
+            <!-- формы с выпадающими списками -->
+            <div class="choose">
+              <form class="choose-form" action="">
+                <label class="label">ORDER</label>
+                <select class="input option">
+                  <option value="random">Random</option>
+                  <option value="desc">Desc</option>
+                  <option value="asc" selected>Asc</option>
+                </select>
+              </form>
+              <form class="choose-form" action="">
+                <label class="label">BREED</label>
+                <select class="input option">
+                  <option value="none">None</option>
+                  <option value="abyssinian">Abyssinian</option>
+                  <option value="bengal" selected>Bengal</option>
+                  <option value="agean">Agean</option>
+                  <option value="american bobtail">American Bobtail</option>
+                  <option value="american shorthair" selected>
+                    American Shorthair
+                  </option>
+                  <option value="american wirehair" selected>
+                    American Wirehair
+                  </option>
+                </select>
+              </form>
+              <form class="choose-form" action="">
+                <label class="label">TYPE</label>
+                <select class="input option">
+                  <option value="all">All</option>
+                  <option value="static">Static</option>
+                  <option value="animated" selected>Animated</option>
+                </select>
+              </form>
+              <form class="choose-form small" action="">
+                <label class="label">LIMIT</label>
+                <select class="input option">
+                  <option value="5 items per page">5 items per page</option>
+                  <option value="10 items per page">10 items per page</option>
+                  <option value="15 items per page" selected>
+                    15 items per page
+                  </option>
+                  <option value="20 items per page" selected>
+                    20 items per page
+                  </option>
+                </select>
+              </form>
+              <button class="btn update-btn">
+                <svg class="icon-min update-icon">
+                  <use href="../svg/symbol-defs.min.svg#icon-update"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="gallery">
+              <img
+                class="medium"
+                src="../images/cat-in-a-tie.jpg"
+                alt=""
+                width="200"
+              />
+              <img class="small" src="../images/2cats.jpg" alt="" width="200" />
+              <img
+                class="small"
+                src="../images/gray-cat.jpg"
+                alt=""
+                width="200"
+              />
+              <img
+                class="small"
+                src="../images/red-cat.jpg"
+                alt=""
+                width="200"
+              />
+              <img
+                class="big"
+                src="../images/cat-voting-page.jpg"
+                alt=""
+                width="420"
+              />
+              <img
+                class="small"
+                src="../images/cat-on-the-hunt.jpg"
+                alt=""
+                width="200"
+              />
+              <img
+                class="small"
+                src="../images/colorful-cat.jpg"
+                alt=""
+                width="200"
+              />
+              <img
+                class="medium"
+                src="../images/cat-with-lizard.jpg"
+                alt=""
+                width="200"
+              />
+              <img
+                class="big"
+                src="../images/cat-in-a-tie.jpg"
+                alt=""
+                width="200"
+              />
+              <img class="small" src="../images/2cats.jpg" alt="" width="200" />
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
