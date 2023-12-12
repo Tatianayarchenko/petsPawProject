@@ -151,8 +151,6 @@ p {
 .logo {
   display: block;
   margin-bottom: 80px;
-
-  /* background-color: tomato; */
 }
 
 .logo img {
@@ -166,14 +164,10 @@ p {
   line-height: 1.32;
   font-weight: 500;
   color: var(--secondary-text-color);
-
-  /* background-color: #ff868e; */
 }
 
 .welkome {
   margin-bottom: 60px;
-
-  /* background-color: #ffd280; */
 }
 
 .text {
@@ -181,8 +175,6 @@ p {
 
   color: var(--secondary-text-color);
   font-weight: 500;
-
-  /* background-color: aqua; */
 }
 
 /* ------- Навигация ------ */
@@ -558,8 +550,7 @@ background-position: center; */
 .like:hover,
 .like:focus {
   background-color: var(--green-hover-color);
-  /* color: var(--default-green-color); */
-  color: #ffd280;
+  color: var(--default-green-color);
 }
 
 .favourite:hover,
@@ -758,15 +749,176 @@ background-position: center; */
   color: var(--default-rose-color);
 }
 
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  /* width: 640px;
+  
+  margin-left: auto;
+  margin-right: auto; */
+
+  /* outline: 2px solid black; */
+}
+
+.item-1 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 200px;
+  height: 300px;
+  background-color: antiquewhite;
+}
+
+.item-2 {
+  grid-column: 2;
+  grid-row: 1;
+  width: 200px;
+  height: 140px;
+  background-color: rgb(37, 136, 103);
+}
+
+.item-3 {
+  grid-column: 3;
+  grid-row: 1;
+  width: 200px;
+  height: 140px;
+  background-color: rgb(238, 142, 196);
+}
+
+.item-4 {
+  grid-column: 1;
+  grid-row: 3;
+  width: 200px;
+  height: 140px;
+  background-color: rgb(215, 233, 250);
+}
+
+.item-5 {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+  width: 420px;
+  height: 300px;
+  background-color: rgb(250, 215, 218);
+}
+
+.item-6 {
+  grid-column: 1;
+  grid-row: 4;
+  width: 200px;
+  height: 140px;
+  background-color: rgb(12, 83, 150);
+}
+
+.item-7 {
+  grid-column: 2;
+  grid-row: 4;
+  width: 200px;
+  height: 140px;
+  background-color: rgb(165, 30, 52);
+}
+
+.item-8 {
+  grid-column: 3;
+  grid-row: 4 / span 2;
+  width: 200px;
+  height: 300px;
+  background-color: rgb(215, 250, 220);
+}
+
+.item-9 {
+  grid-column: 1 / span 2;
+  grid-row: 5 / span 2;
+  width: 420px;
+  height: 300px;
+  background-color: rgb(11, 43, 73);
+}
+
+.item-10 {
+  grid-column: 3;
+  grid-row: 6;
+  width: 200px;
+  height: 140px;
+  background-color: rgb(180, 187, 85);
+}
+
+.item-11 {
+  grid-column: 1;
+  grid-row: 7 / span 2;
+  width: 200px;
+  height: 300px;
+  background-color: rgb(215, 233, 250);
+}
+
+.item-12 {
+  grid-column: 2;
+  grid-row: 7;
+  width: 200px;
+  height: 140px;
+  background-color: rgb(255, 252, 160);
+}
+
+.item-13 {
+  grid-column: 3;
+  grid-row: 7;
+  width: 200px;
+  height: 140px;
+  background-color: rgb(228, 161, 191);
+}
+
+.item-14 {
+  grid-column: 1;
+  grid-row: 9;
+  width: 200px;
+  height: 140px;
+  background-color: rgb(247, 148, 148);
+}
+
+.item-15 {
+  grid-column: 2 / span 2;
+  grid-row: 8 / span 2;
+  width: 420px;
+  height: 300px;
+  background-color: rgb(48, 240, 125);
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.gallery-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 134, 142, 0.6);
+
+  opacity: 0;
+}
+
+.gallery-item:hover::before {
+  opacity: 1;
+}
+
+.gallery-item:hover .img-btn {
+  opacity: 1;
+}
+
+.gallery-img {
+  display: block;
+}
+
 /* ============img-btn========= */
-.img-thumb {
+/* .img-thumb {
   position: relative;
   width: 200px;
   overflow: hidden;
   border-radius: 20px;
-}
+} */
 
-.img-thumb::before {
+/* .img-thumb::before {
   display: inline-block;
   position: absolute;
   content: "";
@@ -774,19 +926,19 @@ background-position: center; */
   height: 100%;
   background-color: rgba(255, 134, 142, 0.6);
   opacity: 0;
-}
+} */
 
-.img-thumb:hover .img-btn {
+/* .img-thumb:hover .img-btn {
   opacity: 1;
-}
+} */
 
-.img-thumb:hover::before {
+/* .img-thumb:hover::before {
   opacity: 1;
-}
+} */
 
-.img {
+/* .img {
   display: block;
-}
+} */
 
 .img-btn {
   position: absolute;
@@ -798,10 +950,11 @@ background-position: center; */
   opacity: 0;
 }
 
-.img-btn:hover {
+/* оставить ховер или нет? */
+/* .img-btn:hover {
   background-color: var(--btn-bg-color);
   color: var(--default-rose-color);
-}
+} */
 
 .img-name {
   position: absolute;
@@ -818,6 +971,6 @@ background-position: center; */
   opacity: 0;
 }
 
-.img-thumb:hover .img-name {
+.gallery-item:hover .img-name {
   opacity: 1;
 }
