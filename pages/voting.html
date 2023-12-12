@@ -4,75 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <!-- служебный див для перехода домой -->
 
-    <div>
+    <!-- <div>
       <a href="/" class="logo">
         <img src="../svg/logo.svg" alt="cat's footprint"
       /></a>
-    </div>
+    </div> -->
 
     <!-- контейнер -->
 
     <div class="container hide">
       <!-- Левая часть сайта -->
 
-      <div class="sidebar">
-        <!-- логотип -->
+      <div class="sidebar-container">
+        <div class="sidebar">
+          <!-- логотип -->
 
-        <header>
-          <a href="../" class="logo">
-            <img src="../svg/logo.svg" alt="cat's footprint" />
-          </a>
-        </header>
+          <header>
+            <a href="../" class="logo">
+              <img src="../svg/logo.svg" alt="cat's footprint" />
+            </a>
+          </header>
 
-        <!-- приветствие -->
+          <!-- приветствие -->
 
-        <p class="greetings">Hi intern!</p>
-        <p class="welkome">Welcome to MI 2022 Front-end test</p>
-        <p class="text">Lets start using The Cat API</p>
+          <p class="greetings">Hi intern!</p>
+          <p class="welkome">Welcome to MI 2022 Front-end test</p>
+          <p class="text">Lets start using The Cat API</p>
 
-        <!-- навигация по станицам -->
+          <!-- навигация по станицам -->
 
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <img
-                src="../svg/voting.svg"
-                alt="folder with voice sheets"
-                class="nav-img"
-              />
-              <a href="./voting.html" class="nav-link">VOTING</a>
-            </li>
-            <li class="nav-item">
-              <img
-                src="../svg/toy-cat.svg"
-                alt="cat"
-                width="138"
-                height="198"
-                class="nav-img"
-              />
-              <a href="./breeds.html" class="nav-link">BREEDS</a>
-            </li>
-            <li class="nav-item">
-              <img
-                src="../svg/gallery.svg"
-                alt="phone in hand"
-                width="138"
-                height="198"
-                class="nav-img"
-              />
-              <a href="./gallery.html" class="nav-link">GALLERY</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <img
+                  src="../svg/voting.svg"
+                  alt="folder with voice sheets"
+                  class="nav-img"
+                />
+                <a href="./voting.html" class="nav-link">VOTING</a>
+              </li>
+              <li class="nav-item">
+                <img
+                  src="../svg/toy-cat.svg"
+                  alt="cat"
+                  width="138"
+                  height="198"
+                  class="nav-img"
+                />
+                <a href="./breeds.html" class="nav-link">BREEDS</a>
+              </li>
+              <li class="nav-item">
+                <img
+                  src="../svg/gallery.svg"
+                  alt="phone in hand"
+                  width="138"
+                  height="198"
+                  class="nav-img"
+                />
+                <a href="./gallery.html" class="nav-link">GALLERY</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
 
       <!-- правая часть сайта -->
@@ -137,39 +150,58 @@
             </button>
             <h2 class="page-title">VOTING</h2>
           </div>
-          <img
-            src="../images/cat-voting-page.jpg"
-            alt="black cat"
-            width="640"
-          />
+          <div class="main-foto">
+            <img
+              src="../images/cat-voting-page.jpg"
+              alt="black cat"
+              width="640"
+            />
 
-          <!--  список кнопок добавления к лайкам или дизлайкам -->
+            <!--  список кнопок добавления к лайкам или дизлайкам -->
 
-          <ul class="add-list">
-            <li class="add-list-item">
+            <!-- <ul class="add-list">
+              <li class="add-list-item">
+                <button class="add-btn like">
+                  <svg class="icon">
+                    <use href="../svg/symbol-defs.min.svg#icon-like"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="add-list-item">
+                <button class="add-btn favourite">
+                  <svg class="icon icon-fav">
+                    <use href="../svg/symbol-defs.min.svg#icon-fav"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="add-list-item">
+                <button class="add-btn dislike">
+                  <svg class="icon">
+                    <use href="../svg/symbol-defs.min.svg#icon-dislike"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul> -->
+            <div class="add-list">
               <button class="add-btn like">
                 <svg class="icon">
                   <use href="../svg/symbol-defs.min.svg#icon-like"></use>
                 </svg>
               </button>
-            </li>
-
-            <li class="add-list-item">
               <button class="add-btn favourite">
                 <svg class="icon icon-fav">
                   <use href="../svg/symbol-defs.min.svg#icon-fav"></use>
                 </svg>
               </button>
-            </li>
-
-            <li class="add-list-item">
               <button class="add-btn dislike">
                 <svg class="icon">
                   <use href="../svg/symbol-defs.min.svg#icon-dislike"></use>
                 </svg>
               </button>
-            </li>
-          </ul>
+            </div>
+          </div>
 
           <!-- коментарии -->
           <ul class="added-list">
@@ -179,7 +211,7 @@
                 Image Id: <span class="id">fQSunHvl8</span> was added to
                 Favourites
               </p>
-              
+
               <svg class="icon comment-icon fav">
                 <use href="../svg/symbol-defs.min.svg#icon-fav"></use>
               </svg>
@@ -190,7 +222,7 @@
                 <time datetime="2018-07-14T22:27" class="time">22:27</time>
                 Image Id: <span class="id">HJd0XecNX</span> was added to Likes
               </p>
-              
+
               <svg class="icon comment-icon comment-icon-like">
                 <use href="../svg/symbol-defs.min.svg#icon-like"></use>
               </svg>
@@ -202,7 +234,7 @@
                 Image Id: <span class="id">BbMFS3bU-</span> was added to
                 Dislikes
               </p>
-            
+
               <svg class="icon comment-icon comment-icon-dislike">
                 <use href="../svg/symbol-defs.min.svg#icon-dislike"></use>
               </svg>

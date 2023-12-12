@@ -20,66 +20,68 @@
   </head>
   <body>
     <!-- служебный див для перехода домой -->
-    <div>
+    <!-- <div>
       <a href="/" class="logo">
         <img src="../svg/logo.svg" alt="cat's footprint"
       /></a>
-    </div>
+    </div> -->
 
     <!--  header -->
 
     <div class="container hide">
       <!-- Левая часть сайта -->
 
-      <div class="sidebar">
-        <!-- логотип -->
+      <div class="sidebar-container">
+        <div class="sidebar">
+          <!-- логотип -->
 
-        <header>
-          <a href="../" class="logo">
-            <img src="../svg/logo.svg" alt="cat's footprint" />
-          </a>
-        </header>
+          <header>
+            <a href="../" class="logo">
+              <img src="../svg/logo.svg" alt="cat's footprint" />
+            </a>
+          </header>
 
-        <!-- приветствие -->
+          <!-- приветствие -->
 
-        <p class="greetings">Hi intern!</p>
-        <p class="welkome">Welcome to MI 2022 Front-end test</p>
-        <p class="text">Lets start using The Cat API</p>
+          <p class="greetings">Hi intern!</p>
+          <p class="welkome">Welcome to MI 2022 Front-end test</p>
+          <p class="text">Lets start using The Cat API</p>
 
-        <!-- навигация по станицам -->
+          <!-- навигация по станицам -->
 
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <img
-                src="../svg/voting.svg"
-                alt="folder with voice sheets"
-                class="nav-img"
-              />
-              <a href="./voting.html" class="nav-link">VOTING</a>
-            </li>
-            <li class="nav-item">
-              <img
-                src="../svg/toy-cat.svg"
-                alt="cat"
-                width="138"
-                height="198"
-                class="nav-img"
-              />
-              <a href="./breeds.html" class="nav-link">BREEDS</a>
-            </li>
-            <li class="nav-item">
-              <img
-                src="../svg/gallery.svg"
-                alt="phone in hand"
-                width="138"
-                height="198"
-                class="nav-img"
-              />
-              <a href="./gallery.html" class="nav-link">GALLERY</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <img
+                  src="../svg/voting.svg"
+                  alt="folder with voice sheets"
+                  class="nav-img"
+                />
+                <a href="./voting.html" class="nav-link">VOTING</a>
+              </li>
+              <li class="nav-item">
+                <img
+                  src="../svg/toy-cat.svg"
+                  alt="cat"
+                  width="138"
+                  height="198"
+                  class="nav-img"
+                />
+                <a href="./breeds.html" class="nav-link">BREEDS</a>
+              </li>
+              <li class="nav-item">
+                <img
+                  src="../svg/gallery.svg"
+                  alt="phone in hand"
+                  width="138"
+                  height="198"
+                  class="nav-img"
+                />
+                <a href="./gallery.html" class="nav-link">GALLERY</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
 
       <!-- правая часть сайта -->
@@ -208,12 +210,29 @@
             </div>
 
             <div class="gallery">
-              <img
+              <!-- ============== -->
+              <!-- образец одного изображения -->
+              <div class="img-thumb">
+                <img
+                  class="img"
+                  src="../images/cat-in-a-tie.jpg"
+                  alt=""
+                  width="200"
+                />
+                <button class="btn img-btn">
+                  <svg class="icon-min img-btn-svg">
+                    <use href="../svg/symbol-defs.min.svg#icon-fav"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- ======================= -->
+              <!-- <img
                 class="medium"
                 src="../images/cat-in-a-tie.jpg"
                 alt=""
                 width="200"
-              />
+              /> -->
               <img class="small" src="../images/2cats.jpg" alt="" width="200" />
               <img
                 class="small"
